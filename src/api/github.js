@@ -4,14 +4,11 @@ const BASE_URL = "https://api.github.com";
 
 export { getRepos, getUserData };
 
-
 function getRepos(username) {
   const url = `${BASE_URL}/users/${username}/repos?per_page=250`;
-  
+
   return axios.get(url).then(response => response.data);
 }
-
-
 
 function getUserData(username) {
   return axios
