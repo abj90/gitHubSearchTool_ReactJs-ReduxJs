@@ -1,0 +1,19 @@
+.content {
+    text-align: left;
+    font-size: 1.6rem;
+    color: #0C1824;
+}
+.content ul{
+    display: block;
+    text-decoration: none;
+}
+.content ul li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.image{
+    -webkit-box-shadow: 10px 10px 39px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 39px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 39px 0px rgba(0,0,0,0.75);
+}

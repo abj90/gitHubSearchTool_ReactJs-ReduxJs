@@ -19,5 +19,9 @@ function getUserData(username) {
     .then(([user, orgs]) => ({
       user: user.data,
       orgs: orgs.data
-    }));
+    }))
+    .catch(error => {
+      console.log("testing from API", error);
+      return error;
+    });
 }

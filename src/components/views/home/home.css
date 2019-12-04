@@ -1,0 +1,25 @@
+.wrap1{
+    height: 150px;
+    text-align: center; 
+}
+
+.wrap1 .content{
+    display: block;
+    line-height:300;
+    text-align: center;
+}
+
+.wrap1 .input{
+    display: inline-block;
+    
+}
+
+.wrap2{
+    height: 110%;
+    margin: 20px 0 40px 0;
+}
+
+.spinner{
+    display: block;
+    text-align: center;
+}

@@ -13,14 +13,23 @@ export const fetchUserRepos = userName => {
 
 export const fetchUserData = userName => {
   return async function(dispatch) {
-    const result = await getUserData(userName);
-
-    const { user, orgs } = result;
-
     dispatch({
-      type: "FETCH_USER_DATA",
-      user,
-      orgs
+      type: "LOADING"
     });
+
+    const result = await getUserData(userName);
+    if (result.message) {
+      dispatch({
+        type: "FETCH_USER_DATA_ERROR",
+        payload: result.message
+      });
+    } else {
+      const { user, orgs } = result;
+      dispatch({
+        type: "FETCH_USER_DATA_SUCCESS",
+        user,
+        orgs
+      });
+    }
   };
 };

@@ -1,13 +1,5 @@
 import React, { useState } from "react";
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink
-} from "reactstrap";
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav } from "reactstrap";
 
 const Header = props => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,19 +9,10 @@ const Header = props => {
   return (
     <div>
       <Navbar color="dark" light expand="md">
-        <NavbarBrand>GitHub App</NavbarBrand>
+        <NavbarBrand>GitHub Searcher</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
-            <NavItem>
-              <NavLink href="/components/">Components</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">
-                GitHub
-              </NavLink>
-            </NavItem>
-          </Nav>
+          <Nav className="mr-auto" navbar></Nav>
         </Collapse>
       </Navbar>
     </div>
