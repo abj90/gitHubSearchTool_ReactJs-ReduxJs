@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Please run npm install and then npm start to initialize the appplication  
 
 ## Observations
-I have implemented the features below as requested 
+I have implemented the features below:
 
 *used ES6 syntax including arrow functions, destructuring and async/await
 
